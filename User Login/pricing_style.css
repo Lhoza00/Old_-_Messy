@@ -1,0 +1,87 @@
+:root{
+    --main-color:#2ee264;
+    --light-color:#666;
+    --light-bg:#eee;
+    --white:#fff;
+    --black:#303030;
+    --border:.1rem solid var(--light-color);
+    --box-shodow:0 .5rem 1rem rgba(0,0,0,.1);
+ }
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 10rem;
+ }
+
+ section{
+    padding: 3rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+ }
+
+
+ .header .navhead {
+    background-color: var(--black);
+}
+
+.header .navhead .flex{
+    margin-bottom: 90px;
+
+    display: flex;
+   align-items: center;
+   justify-content: space-between;
+ }
+
+ .header .navhead .flex ul li{
+    float: left;
+    position: relative;
+ }
+
+ .header .navhead .flex ul li a{
+    display: inline-block;
+    padding: 1.2rem 1.5rem;
+    font-size: 1.8rem;
+    color: var(--black);
+    background-color: var(--white);
+ }
+
+.rightbar{
+    padding: 0rem 2rem;
+   display: block;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+body{
+    color: white;
+    background:#2ee264;
+}   
+
+
+body section div div p{
+   text-align:center;
+   font-size: 35px;
+   margin-top:10px; 
+}
+
+.Pricecontainer{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:50px;
+    flex-wrap: wrap;
+}
+.Pricecontainer .Pricecard{
+    position: relative;
+    width: 320px;
+    height: 400px;
+    background-color: rgba(45,45,45,1);
+    border-radius: 20px;
+}
