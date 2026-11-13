@@ -1,0 +1,179 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advert</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="Home.html" class="Logo">Cloud9</a> 
+            <nav class="navbar">
+                <a href="About.html">Shop</a>
+                <a href="Contact.html">Contact</a>
+                <a href="Home.html">News</a> 
+            </nav>
+            <div id="menu-btn" class="fas fa-bars"></div> 
+        </div>
+    </header>
+    <main>
+        <section class="SectionCustomerCheckout">
+            <div class="container">
+                <div class="CustomerCheckout">
+                    <div class="CustomerDetialsCard">
+                        <span hidden><p>1</p></span>
+                        <h2>Customer Details</h2>
+                        <hr  size="3" color="black"/>
+                        <input placeholder="Name *" class="Input_Item0">
+                        <div>
+                            <input type="email" placeholder="Email Address *" class="Input_Item1">
+                            <input placeholder="CellNumber *" class="Input_Item2">
+                        </div>
+                        <div>
+                            <input placeholder="Street Address *" class="Input_Item1">
+                            <select class="Input_Item2">
+                                <option value="Prov0" hidden>Select Province *</option>
+                                <option value="Prov1">Eastern Cape</option>
+                                <option value="Prov2">Free State</option>
+                                <option value="Prov3">Gauteng</option>
+                                <option value="Prov4">KwaZulu-Natal</option>
+                                <option value="Prov5">Limpopo</option>
+                                <option value="Prov6">Mpumalanga</option>
+                                <option value="Prov7">Northern Cape</option>
+                                <option value="Prov8">North West</option>
+                                <option value="Prov9">Western Cape</option>
+                            </select>
+                        </div>
+                        <input placeholder="Building floor etc(optional)" class="Input_Item0">
+                        <div>
+                            <input placeholder="City/Town *" class="Input_Item1">
+                            <input placeholder="Zip Code *" class="Input_Item2" min="0001" max="9999">
+                        </div>
+                        <a href="#" id="ref"><button class="Input_Item0" id="Buttons">Deliver to this address</button></a>
+                    </div>
+                    <div class="OrderSummaryCard">
+                        <div class="heading">
+                            <h2>Order Summary</h2>
+                            <a href="Cart.html">Modify Order</a>
+                        </div>
+                        <hr  size="3" color="black"/>
+                        <div class="CartCart">
+                            <div class="flexImage">
+                                <img src="jacket.jpg" alt="ItemClothing">
+                            </div>
+                            <div class="FlexDetail">
+                                <p>Alternative Clothes</p>
+                                <div class="CartDiv1">
+                                    <p>R1090.00</p>
+                                    <p class="cartSize">Quant: 1</p>   
+                                </div>
+                            </div>
+                            <div class="FlexLast">
+                                <a href="#" id="fa-trash"><i class="fa-solid fa-trash"></i>Remove</a>
+                                <p class="cartSize">Size: xL</p>   
+                            </div>
+                        </div>
+                        <hr  size="3" color="black"/>
+                        <div class="PaymentPrice">
+                            <p class="dispear">Shipping & taxes will be calculated after an address is provided</p>
+                            <p hidden>Delivery between: <i>N/A - N/A</i></p>
+                            <div class="fish">
+                                <h3>SubTotal</h3>
+                                <h3>R 1090.00</h3>  
+                            </div>
+                            <div class="fish">
+                                <h3 hidden >Sales Tax:</h3>
+                                <p hidden>N/A</p>
+                            </div>
+                            <div class="fish">
+                                <h3 hidden>Delivery:</h3>
+                                <p hidden>N/A</p> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="PaymentCheckout">
+                    <div class="CustomerBankCard">
+                        <span hidden><p>2</p></span>
+                        <h2>Payment Method</h2>
+                        <div class="CardPayment">
+                            <div class="flexDiv">
+                                <div class="SelectionHeader">
+                                    <input type="radio" id="CheckBox">
+                                    <p>Card</p> 
+                                </div>
+                                <form>
+                                    <fieldset class="FieldsetNameOfCard">
+                                        <legend>Name on card</legend>
+                                        <input class="NameOfCard">
+                                    </fieldset>
+                                    
+                                    <div>
+                                        <fieldset class="FieldsetCardNumber">
+                                            <legend>Card Number</legend>
+                                            <input class="CardNumber">
+                                        </fieldset>
+                                        <fieldset class="FieldsetCardCode">
+                                            <legend>Security Code</legend>
+                                            <input class="CardCode">
+                                        </fieldset>
+                                    </div>
+                                   
+                                    <div class="CVV">
+                                        <fieldset class="FieldsetMonthCVV">
+                                            <legend>Month CVV</legend>
+                                            <input type="number" min="1" max="12" class="MonthCVV">
+                                        </fieldset>
+                                        <fieldset class="FieldsetYearCVV">
+                                            <legend>Year CVV</legend>
+                                            <input type="number" min="25" max="45" class="YearCVV">
+                                        </fieldset>
+                                    </div>
+                                    
+                                </form>
+                            </div>
+                            <div class="FlexDiv">
+                                <input type="radio">
+                                <p>PayPal</p>
+                                <div>
+                                    <input placeholder="Name of Card">
+                                    <input placeholder="Card Number">
+                                </div>
+                            </div>
+                           
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="topfooter">
+                <a href="Home.html" class="Logo">Cloud9</a> 
+                <div class="socials">
+                    <i href="#" class="fab fa-facebook-f"></i>
+                    <i class="fab fa-youtube"></i>
+                    <i class="fab fa-twitter"></i>                
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </div>
+            <hr/>
+            <div class="footlinks">
+                <div id="copyright">
+                    <p>© 2025 Cloud9</p>
+                </div>
+                <div id="T_C">
+                    <a href="#">About</a>
+                    <a href="#">Help</a>
+                    <a href="#">Term</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

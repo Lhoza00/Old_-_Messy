@@ -1,0 +1,757 @@
+* {
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    
+}
+
+.header{
+    background-color: pink;
+    
+}
+
+.Subership{
+    background-color: peachpuff;
+    display: flex;
+    height: 2rem;
+    
+}
+
+.Subership .container a{
+    text-decoration: none;
+}
+
+.Subership .container a p{
+    text-align: center;
+    margin: 0 auto;
+    color: black;
+    font-size: 1.4rem;
+}
+
+.Cancel{
+    font-size: 2rem;
+    border: none;
+    background-color: peachpuff;
+    margin-right: 1rem;
+}
+
+.header .container{
+    position: sticky;
+    width: 90%;
+    padding: 20px;
+    display: flex;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+.Logo{
+    font-size: 32px;
+    color: black;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.navbar a {
+    position: relative;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+    color: black;
+}
+
+#menu-btn{
+    font-size: 35px;
+    display: none;
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: .3s;
+}
+
+.navbar a:hover:before {
+    width: 100%
+}
+
+.container{
+    max-width: 1536px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    border: 1px solid tomato;
+    width: 90%;
+} 
+
+body{
+    background-image: url(backimage.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.cart{
+    padding-left: 7rem;
+    font-size: 2rem;
+    color: black;
+}
+.SectionHeroImage .container{
+    display: flex;
+    max-width: 90%;
+    max-height: 85%;
+    height: 90%;
+}
+
+.SectionHeroImage .container h1{
+    font-size: 7rem;
+    border: 1px solid navy;
+    line-height: 1.12;
+    width: 50vw;
+    height: 69vh;
+    margin: 3rem 0;
+}
+
+.heroImage{
+    max-width: 35vw;
+    max-height: 67vh;
+    border-radius: 20px;
+    border: 1px solid black;
+    position: relative;
+    top: 50;
+    right: -50;
+    margin: 0;
+    
+}
+
+.HeroProduct .container{
+    height: 110vh;
+}
+
+.RecommendedSection .container{
+    height: 60vh;
+}
+
+.container .containerCard {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-template-rows: 48vh 48vh;
+    justify-content: center;
+    gap: 3rem;
+    margin: 0 auto;
+    margin-top: 5vh;
+}
+
+.RecommendedSection .container .containerCard{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-template-rows: 48vh;
+    justify-content: center;
+    gap: 3rem;
+    margin: 0 auto;
+    margin-top: 5vh;
+}
+
+.Item_Container{
+    background-color: lightcyan;
+    z-index: 10;
+    border-radius: 11px;
+}
+
+
+
+.container .containerCard .Item_Container .ProductDetail{
+    margin-top: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .containerCard .Item_Container p{
+    font-size: 1.2rem;
+}
+
+.container .containerCard .Item_Container .item_card{
+    border: 1px solid black;
+    position: relative;
+    border-radius: 11px;
+    max-width: 100%;
+    width: 100%;
+    max-height: 50vh;
+    height: 40vh;
+}
+
+.containerCard .Item_Container:hover{
+    .item_card img{
+        transform: scale(1.1);
+        opacity: 100%;
+    }
+}
+
+.containerCard .Item_Container .item_card:hover{
+    #fa-cart-plus{
+        visibility: visible;
+        color: black;
+    }
+    #fa-arrows-alt{
+        visibility: visible;
+        color: black;
+    }
+    .item_card img{
+        transform: scale(1.5);
+        opacity: 1%;
+    }
+}
+
+.containerCard .Item_Container .item_card img{
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 86%;
+    border-radius: 11px;
+}
+
+.containerCard .item_card #fa-cart-plus{
+    position: absolute;
+    top: 4;
+    right: 0;
+    font-size: 2rem;
+    visibility: hidden;
+
+    z-index: 100;
+}
+
+.containerCard .item_card #fa-arrows-alt{
+    position: absolute;
+    top: 0;
+    left: 0;
+    rotate: 45deg;
+    font-size: 2rem;
+    visibility: hidden;
+}
+
+/*Cart Page*/
+.CartSection .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.CartSection .container .MyCartContainer{
+    border: 1px solid navy;
+    width: 30vw;
+    height: auto;
+    margin: 20px 0;
+}
+
+.CartContainer{
+    margin-left: 4rem;
+}
+.cartcart{
+    background-color: lightgrey;
+    width: 13vw;
+    line-height: 1.4;
+    border-radius: 11px;
+}
+
+.flexImage{
+    border: 1px solid black;
+    width: 13vw;
+    height: 24vh;
+    border-radius: 11px;
+}
+
+.flexImage img{
+    width: 100%;
+    height: 100%;
+    border-radius: 11px;
+}
+
+.flexDetail p{
+    padding-left: 3px;
+}
+
+.flexDetail .CartDiv1{
+    display: flex;
+    justify-content: space-between;
+}
+
+.flexDetail .CartDiv1 input{
+    width: 4.5vw;
+    margin: 0 3px;
+    border-width: 0;
+    border-radius: 8px;
+}
+
+.flexLast{
+    display: flex;
+    justify-content: space-between;
+}
+
+#fa-trash{
+    float: left;
+    margin: 5px 0;
+    font-size: 15px; 
+    padding-left: 3px;
+}
+
+#fa-trash i{
+    padding-right: 5px;
+}
+
+.CartSize{
+    width: 4.5vw;
+    margin: 5px 3px;
+    border-width: 0;
+    border-radius: 8px;
+}
+
+.PaymentContainer{
+    border: 1px solid purple;
+    width: 30vw;
+    margin: 20px 0;
+}
+
+.PaymentPrice{
+    display: flex;
+    justify-content: space-between;
+}
+
+.PaymentContainer p{
+    text-align: center;
+}
+
+.ReturnPolicy{
+    
+    margin: 20px auto;
+    width: 26vw;
+    height: 2rem;
+    border-radius: 11px;
+}
+
+.non{
+    text-decoration: none;
+    color: black;
+}
+
+.ReturnPolicy button{
+    font-size: 22px;
+    background-color: lightgray;
+    border-radius: 11px;
+    border-width: 1px;
+    width: 100%;
+}
+
+.Checkout{
+    font-size: 22px;
+    background-color: lightgray;
+    border-radius: 11px;
+    border-width: 1px;
+    width: 100%;
+}
+
+/*Checkout Page*/
+
+.SectionCustomerCheckout .container .CustomerCheckout{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.SectionCustomerCheckout .container .CustomerCheckout .CustomerDetialsCard{
+    width: 45%;
+    height: 56vh;
+    margin: 2rem 1rem;
+    border: 1px solid navy;
+    background-color: lightgreen;
+}
+
+.CustomerDetialsCard h2{
+    padding: 1rem 4rem;
+}
+
+.CustomerDetialsCard .Input_Item0{
+    width: 80%;
+    display: flex;
+    height: 5vh;
+    font-size: 20px;
+    border-radius: 5px;
+    border-width: 0px;
+    margin: 1rem auto;
+    padding-left: 10px;
+}
+
+.CustomerDetialsCard div{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1rem 0;
+    
+}
+
+.CustomerDetialsCard div .Input_Item1{
+    width: 45%;
+    height: 5vh;
+    margin-left: 0rem;
+    font-size: 20px;
+    border-radius: 5px;
+    border-width: 0px;
+    padding-left: 10px;
+}
+
+.CustomerDetialsCard div .Input_Item2{
+    width: 25%;
+    height: 5vh;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 5px;
+    border-width: 0px;
+}
+
+.CustomerDetialsCard a{
+    text-decoration: none;
+}
+
+.CustomerDetialsCard .Input_Item0:last-child{
+    padding: 0 5rem;
+    font-size: 30px;
+}
+
+.SectionCustomerCheckout .container .OrderSummaryCard{
+    border: 1px solid navy;
+    width: 35%;
+    margin: 2rem 2rem;
+    background-color: whitesmoke;
+}
+
+.SectionCustomerCheckout .container .OrderSummaryCard .heading{
+    display: flex;
+    justify-content: space-between;
+}
+
+.OrderSummaryCard .heading a{
+    padding: 1.2rem 1rem;
+    color: purple;
+}
+
+.SectionCustomerCheckout .container .OrderSummaryCard h2{
+    padding: 1rem 1rem;
+}
+
+.SectionCustomerCheckout .container .OrderSummaryCard .cartcart{
+    margin: 1rem 1rem;
+}
+
+.SectionCustomerCheckout .container .OrderSummaryCard .cartcart .flexDetail .CartDiv1 .CartSize{
+    width: 4.5vw;
+    margin: 0px 3px;
+    border-width: 0;
+    border-radius: 8px;
+}
+
+.OrderSummaryCard .PaymentPrice{
+    display: contents;
+}
+
+.OrderSummaryCard .PaymentPrice p{
+    word-wrap: break-word;
+    text-align: center;
+    margin: 0.5rem 3rem;
+}
+
+.fish{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0.9rem;
+    padding-top: 0;
+    width: 100%;
+}
+
+.PaymentCheckout .CustomerBankCard{
+    width: 45%;
+    height: 56vh;
+    margin: 2rem 4.6rem;
+    border: 1px solid navy;
+    background-color: lightgreen;
+}
+
+.PaymentCheckout .CustomerBankCard h2{
+    padding: 1rem 3.5rem;
+}
+
+.PaymentCheckout .CustomerBankCard .Cardpayment .FlexDiv {
+    margin: 0px auto;
+    border: 1px solid brown;
+}
+
+.FlexDiv .SelectionHeader{
+    display: inline-flex;
+    padding-left: 3.5rem;
+}
+
+.FlexDiv .SelectionHeader p{
+    font-size: 20px;
+    padding-left: 5px;
+}
+
+.FlexDiv form{
+    display: contents;
+}
+
+.FlexDiv div #CheckBox:checked{
+    .FlexDiv form{
+        display: contents;
+    }
+}
+
+.FieldsetNameOfCard{
+    border-width: 0;
+    margin: 0 auto;
+    width: 31.7vw;
+}
+.NameOfCard{
+    width: 100%;
+    height: 5vh;
+    font-size: 20px;
+    border-radius: 5px;
+    border-width: 0px;
+}
+.FieldsetCardNumber{
+    border-width: 0;
+    margin: 0 auto;
+    width: 16vw;
+}
+.CardNumber{
+    width: 100%;
+    height: 5vh;
+    font-size: 20px;
+    border-radius: 5px;
+    border-width: 0px;
+}
+.FieldsetCardCode{
+    border-width: 0;
+    margin: 0 auto;
+    width: 8vw;
+}
+.CardCode{
+    width: 100%;
+    height: 5vh;
+    font-size: 20px;
+    border-radius: 5px;
+    border-width: 0px;
+}
+.FieldsetMonthCVV{
+    border-width: 0px;
+    margin: 0 auto;
+    width: 12vw;
+}
+.MonthCvv{
+    width: 100%;
+    height: 5vh;
+    font-size: 20px;
+    border-radius: 5px;
+    border-width: 0px;
+}
+.FieldsetYearCVV{
+    border-width: 0px;
+    margin: 0 auto;
+    width: 12vw;
+}
+.YearCvv{
+    width: 100%;
+    height: 5vh;
+    font-size: 20px;
+    border-radius: 5px;
+    border-width: 0px;
+}
+
+
+
+.FlexDiv form fieldset input:first-child{
+    width: 80%;
+    display: flex;
+    height: 5vh;
+    font-size: 20px;
+    
+}
+
+.FlexDiv form div{
+    display: flex;
+    margin: 0.4rem 0;
+    justify-content: center;
+}
+
+
+
+.FlexDiv form div fieldset .Input_Item2{
+    width: 5vw;
+    height: 5vh;
+    margin-right: 1rem;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 5px;
+    border-width: 0px;
+}
+
+.FlexDiv form .CVV .Input_Item1{
+    width: 37%;
+    margin-left: 4rem;
+}
+
+.FlexDiv form .CVV .Input_Item2{
+    width: 37%;
+}
+
+/*Contact Page*/
+
+.section_contact .container{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.cardContact{
+    width: 52%;
+    height: auto;
+    margin: 30px auto;
+    background: chartreuse;
+    border-radius: 17px;
+}
+
+.contactTitle{
+    font-size: 30px;
+    font-weight: 700;
+    padding: 10px 0;
+   
+}
+
+.wording{
+    font-size: 20px;
+    padding-top: 30px;
+}
+
+.cardpadding{
+    padding-left: 3rem;
+    
+}
+
+.contacter{
+    width: 92%;
+    height: 2.7rem;
+    margin-top: 30px;
+    border-radius: 7px;
+    border-width: 1px;
+}
+
+.contactermessage{
+    height: 8rem;
+    width: 92%;
+    
+    margin-top: 30px;
+    border-radius: 7px;
+    border-width: 1px;
+}
+
+.contactermessage::placeholder{
+    text-align: left;
+    padding-left: 20px;
+}
+
+.contacter::placeholder{
+    text-align: left;
+    padding-left: 20px;
+}
+
+.cardContact button{
+    width: 9rem;
+    height: 2rem;
+    
+    margin: 20px 0;
+    border-radius: 6px;
+    border-width: 1px;
+}
+
+.helpHeader{
+    font-size: 32px;
+    padding-top: 20px;
+}
+
+.Divhelp{
+    position: relative;
+    width: 230px;
+    height: 160px;
+    border-radius: 17px;
+}
+
+.Imgquestion{
+    width: 70%;
+    position: absolute;
+    top: -30;
+    right: -300;
+    float: right;
+}
+
+.HelpPar{
+    font-size: 26px;
+    padding-top: 16px;
+}
+
+.Divhelp button{
+    width: 180px;
+    margin-left: 0px;
+    margin-bottom: 10px;
+}
+
+.ContactAddress{
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+/*Footer Page*/
+footer{
+    margin-top: 5vh;
+    height: 15vh;
+}
+
+.topfooter{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.socials{
+    font-size: 1.7rem;
+    padding-top: 7px;
+    border: 1px solid blue;
+}
+
+.socials i{
+    padding: 0 9px;
+}
+
+.footlinks{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+#T_C{
+    display: flex;
+    justify-content: space-between;
+    width: 19vw;
+    border: 1px solid brown;
+}
+
+#T_C a{
+    text-decoration: none;
+    color: black;
+   
+}

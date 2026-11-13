@@ -1,0 +1,146 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advert</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="Home.html" class="Logo">Cloud9</a> 
+            <nav class="navbar">
+                <a href="About.html">Shop</a>
+                <a href="Contact.html">Contact</a>
+                <a href="Home.html">News</a> 
+            </nav>
+            <div id="menu-btn" class="fas fa-bars"></div> 
+        </div>
+    </header>
+    <main>
+        <section class="CartSection">
+            <div class="container">
+                <div class="MyCartContainer">
+                    <div class="CartContainer">
+                        <h2>My Cart</h2>
+                        <div class="CartCart">
+                            <div class="flexImage">
+                                <img src="jacket.jpg" alt="ItemClothing">
+                            </div>
+                            <div class="FlexDetail">
+                                <p>Alternative Clothes</p>
+                                <div class="CartDiv1">
+                                    <p>R1090.00</p>
+                                    <input type="number" placeholder="Quant" min="1" max="10" >   
+                                </div>
+                            </div>
+                            <div class="FlexLast">
+                                <a href="#" id="fa-trash"><i class="fa-solid fa-trash"></i>Remove</a>
+                                <select class="CartSize">
+                                    <option value="Item0" hidden>Size</option>
+                                    <option value="Item1">xS</option>
+                                    <option value="Item2">S</option>
+                                    <option value="Item3">M</option>
+                                    <option value="Item4">L</option>
+                                    <option value="Item5">xL</option>
+                                </select>      
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                change display to grid to be able to add more of this 
+                <div class="PaymentContainer">
+                    <div class="PaymentPrice">
+                        <h3>SubTotal:</h3>
+                        <h3>R 1090.00</h3>
+                    </div>
+                    <p>Shipping is calculated in the checkout</p>
+                    <div class="ReturnPolicy">
+                        <a href="Home.html" class="non"><button>30 Day free return policy. <a href="Home.html">Learn more</a></button></a>
+                    </div>
+                    <div class="ReturnPolicy">  
+                        <a href="Checkout.html"><button class="checkout">Checkout</button></a>
+                     </div>  
+                </div>
+            </div>
+        </section>
+        <section class="RecommendedSection">
+            <div class="container">
+                <h1>What might interest you:</h1>
+                <div class="containerCard">
+                    <div class="Item_Container">
+                        <div class="Item_Card">
+                            <a href="#"><img src="jacket.jpg" alt="ItemImage"></a> 
+                            <a href="#"><i id="fa-arrows-alt" class="fa-solid fa-arrows-alt"></i></a>
+                            <a href="#"><i id="fa-cart-plus" class="fa-solid fa-cart-plus"></i></a> 
+                        </div>
+                        <div class="ProductDetail">
+                            <p class="Product_Name">Alternative Cost</p>
+                            <p class="Product_Price">R1090.00</p>
+                        </div>
+                    </div>
+                    <div class="Item_Container">
+                        <div class="Item_Card">
+                            <a href="#"><img src="Hoody.jpg" alt="ItemImage"></a> 
+                            <a href="#"><i id="fa-arrows-alt" class="fa-solid fa-arrows-alt"></i></a>
+                            <a href="#"><i id="fa-cart-plus" class="fa-solid fa-cart-plus"></i></a> 
+                        </div>
+                        <div class="ProductDetail">
+                            <p class="Product_Name">Alternative Cost</p>
+                            <p class="Product_Price">R1090.00</p>
+                        </div>
+                    </div>
+                    <div class="Item_Container">
+                        <div class="Item_Card">
+                            <a href="#"><img src="Hoodie.jpg" alt="ItemImage"></a> 
+                            <a href="#"><i id="fa-arrows-alt" class="fa-solid fa-arrows-alt"></i></a>
+                            <a href="#"><i id="fa-cart-plus" class="fa-solid fa-cart-plus"></i></a> 
+                        </div>
+                        <div class="ProductDetail">
+                            <p class="Product_Name">Alternative Cost</p>
+                            <p class="Product_Price">R1090.00</p>
+                        </div>
+                    </div>
+                    <div class="Item_Container">
+                        <div class="Item_Card">
+                            <a href="#"><img src="Sweater.jpg" alt="ItemImage"></a> 
+                            <a href="#"><i id="fa-arrows-alt" class="fa-solid fa-arrows-alt"></i></a>
+                            <a href="#"><i id="fa-cart-plus" class="fa-solid fa-cart-plus"></i></a> 
+                        </div>
+                        <div class="ProductDetail">
+                            <p class="Product_Name">Alternative Cost</p>
+                            <p class="Product_Price">R1090.00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="topfooter">
+                <a href="Home.html" class="Logo">Cloud9</a> 
+                <div class="socials">
+                    <i href="#" class="fab fa-facebook-f"></i>
+                    <i class="fab fa-youtube"></i>
+                    <i class="fab fa-twitter"></i>                
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </div>
+            <hr/>
+            <div class="footlinks">
+                <div id="copyright">
+                    <p>© 2025 Cloud9</p>
+                </div>
+                <div id="T_C">
+                    <a href="#">About</a>
+                    <a href="#">Help</a>
+                    <a href="#">Term</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+        <div class="navbar">
+            <a href="Home.html" class="back">< Continue shopping</a>
+            <a href="Home.html" class="hometitle">Cloud9</a>
+        </div>
+    <section>
+        <div class="container">
+            <div class="Card1">
+            <p id="checkout">Checkout</p>
+            <p id="detail">Please enter customer detail</p>
+            <hr color="black" size="2"/>
+                <div class="checkOutDetails">
+                    <input class="class" type="email" placeholder="E-mail address *">
+                    <input placeholder="First Name *" class="class1">
+                    <input placeholder="Last Name *" class="class2">
+                    <input placeholder="Street Address *" class="class">
+                    <input placeholder="City/Town*" class="class1">
+                    <select class="class2">
+                        <option value=" " disabled selected>Select Province</option>
+                        <option value="prov1">Eastern Cape</option>
+                        <option value="prov2">Free State</option>
+                        <option value="prov3">Gauteng</option>
+                        <option value="prov4">KwaZulu-Natal</option>
+                        <option value="prov5">Limpop</option>
+                        <option value="prov6">Mpumalanga</option>
+                        <option value="prov7">Nothern Cape</option>
+                        <option value="prov8">North West</option>
+                        <option value="prov9">Western Cape</option>
+                    </select>
+                    <input type="number" placeholder="phone number*" class="class1">
+                    <input type="number" placeholder="zip code*" class="class2">
+                    <button class="class" type="submit">Continue</button>
+                </div>
+            </div>
+            <div class="card2">
+                <div class="w">
+                    <p class="ordsummary">Order summary</p>
+                    <p class="mod"><a href="#" >Modify order</a></p>
+                
+                </div>
+                <hr/>
+                <div>
+                    <!--Will need to figure way to add the shopping order carts-->
+                    <p class="subtotal">Subtotal</p>
+                    <p id="total"></p>
+                    <p class="orderText">Shipping and taxes will be calculater after address is provided</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
