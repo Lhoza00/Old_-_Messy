@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+}
+
+body {
+    min-height: 100vh;
+    background: url(download.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+  
+}
+
+.Home_Advertisement{
+    padding: 2rem 1rem;
+    max-width: 100%;
+    margin: 0 auto;
+ }
+
+.H1{
+    text-align: center;
+    padding: 0.5rem;
+    font-size: 100px;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.headers {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: licrorice;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 32px;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.navbar a {
+    position: relative;
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: .3s;
+}
+
+.navbar a:hover:before {
+    width: 100%
+}
+
+.container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px,1rem));
+    grid-gap: 100px;
+    margin: 0 auto;
+    padding: 1rem 5rem;
+}
+
+.container .card{
+    position: relative;
+    width: 400px;
+    height: 500px;
+    margin: 0 auto;
+    background: tomato;
+    
+}
+
+.container .card .front{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.container .card .front.front1{
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.container .card .front.front1 h2{
+    margin: 0;
+    padding: 0;
+}
+
+.container .card .front.front2{
+    background: #111;
+    transition: 0.5s;
+}
+
+.container .card:hover .front.front2{
+    height: 20px;
+}
+
+.container .card .front.front2::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: rgba(255,255,255,.1);
+}
+
+.container .card .front.front2 h2{
+    margin: 0;
+    padding: 0;
+    font-size: 10em;
+    color: #fff;
+    transition: .5s;
+    
+}
+
+.container .card:nth-child(1) .front.front2{
+    background: linear-gradient(45deg, #3503ad, #f7308c);
+}
+
+.container .card:nth-child(2) .front.front2{
+    background: linear-gradient(45deg, #3503ad, #f7308c);
+}
+
+.container .card:nth-child(3) .front.front2{
+    background: linear-gradient(45deg, #3503ad, #f7308c);
+}
+
+.HomeImg{
+    width: 850px;
+    height: 500px;
+}
+
+.footer{
+    background: darkslategray;
+    height: 100%;
+    width: 100%;
+    justify-content: right;
+    align-items: right;
+    padding: 0rem 2rem;
+    font-size: 2rem;
+}
+
+.footer .flex .box a{
+    display: block;
+    padding: 0.4rem 3rem;
+    font-size: 1.3rem;
+    text-align: right;
+}
+
+.footer .subfooter{
+    padding-bottom: 1rem;
+    padding-right: 3rem;
+}
+
+.footer .flex{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-between;
+ }
+ 
+ .footer .flex .box{
+    flex: 1 1 30rem;
+ }
+
+.footer .flex .box:last-child{
+    text-align: right;
+ }
+
+.footer .credit{
+    padding: 2rem 2rem;
+    text-align: center;
+    border-top: var(--border);
+    font-size: 2rem;
+    color: var(--white);
+    margin-top: 0rem;
+    /* padding-bottom: 10rem; */
+ }
+
+ 
